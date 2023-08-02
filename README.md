@@ -1,3 +1,3 @@
-# All configuration for my Linux system
+# My NixOS system
 
-Configuration for my complete NixOS system using Hyprland.
+Configuration and dotfiles for my complete NixOS (Linux) system using Hyprland.
