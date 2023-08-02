@@ -1,0 +1,15 @@
+theme="base16_transparent"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "underline"
+select = "block"
+
+[keys.normal]
+C-s = ":w"
+C-o = ":config-open"
+C-r = ":config-reload" 
+j = "move_char_left"
+k = "move_line_down"
+l = "move_line_up"
+"ö" = "move_char_right"
