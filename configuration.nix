@@ -16,7 +16,6 @@
     starship    # Shell prompt
     helix       # Fancy text editor
     vim         # Text editor
-    fish        # Shell
     man         # Manual pages
     neofetch    # System info
     hyfetch     # System info
@@ -66,6 +65,10 @@
     steam                   # Game client
     desmume                 # Nintendo DS emulator
   ];
+
+  # Shell
+  programs.fish.enable = true;
+  users.defaultUserShell = pkgs.fish;
 
   # Fonts
   fonts = {

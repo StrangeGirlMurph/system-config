@@ -117,7 +117,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: FuraMono Nerd Font
+    #family: FuraMono Nerd Font
     # The `style` can be specified to pick a specific face.
     style: Regular
 
@@ -127,7 +127,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: FuraMono Nerd Font
+    #family: FuraMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -138,7 +138,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: FuraMono Nerd Font
+    # family: FuraMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -433,7 +433,7 @@ cursor:
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
- program: /bin/fish
+ program: fish
 #  args:
 #    -- login
 

@@ -9,6 +9,16 @@
 
   ];
 
+  programs.starship = {
+    enable = true;
+    enableFishIntegration = true;
+  };
+
+  home.file.".config/" = {
+    source = ./dotfiles;
+    recursive = true;
+  };
+
   programs.git = {
     enable = true;
     userName = "Murphy";
