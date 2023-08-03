@@ -9,6 +9,18 @@
 
   ];
 
+  gtk.enable = true;
+  #gtk.cursorTheme = {};
+  #gtk.theme = {};
+  #gtk.iconTheme = {};
+  
+  qt.enable = true;
+  qt.platformTheme = "gtk";
+  qt.style = {
+    name = "breeze";
+    package = pkgs.breeze-qt5;
+  };
+
   programs.starship = {
     enable = true;
     enableFishIntegration = true;

@@ -11,6 +11,12 @@
   # Packages
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    hyprpaper
+    rofi-wayland
+    eww
+    mako
+    libnotify
+
     # Terminal
     alacritty   # Terminal emulator
     starship    # Shell prompt
@@ -21,7 +27,6 @@
     hyfetch     # System info
     btop        # System monitor
     bat         # Fancy cat
-
 
     # Basic Apps
     firefox                 # Web browser
@@ -98,6 +103,8 @@
     enable = true;
     xwayland.hidpi = true;
   };
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
 
   # Users
   users.users.murphy = {
@@ -143,4 +150,5 @@
     enable = true;
     configurationLimit = 2;
   };
+  systemd.extraConfig = ''DefaultTimeoutStopSec=6s'';
 }
