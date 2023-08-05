@@ -4,10 +4,7 @@
   home.username = "murphy";
   home.homeDirectory = "/home/murphy";
   home.stateVersion = "23.05";
-
-  home.packages = with pkgs; [
-
-  ];
+  home.packages = with pkgs; [ ];
 
   xdg.mimeApps = {
     enable = true;
@@ -15,12 +12,12 @@
       "application/pdf" = "firefox.desktop";
     };
   };
-  
+
   gtk.enable = true;
   #gtk.cursorTheme = {};
   #gtk.theme = {};
   #gtk.iconTheme = {};
-  
+
   qt.enable = true;
   qt.platformTheme = "gtk";
   qt.style = {

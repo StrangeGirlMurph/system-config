@@ -14,7 +14,7 @@
       TARS = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./configuration.nix
+          ./modules/nixos.nix
           ./hosts/TARS/configuration.nix
           home-manager.nixosModules.home-manager
           {
@@ -28,7 +28,7 @@
       CASE = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./configuration.nix
+          ./modules/nixos.nix
           ./hosts/CASE/configuration.nix
           home-manager.nixosModules.home-manager
           {

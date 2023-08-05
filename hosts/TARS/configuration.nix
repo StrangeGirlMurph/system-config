@@ -6,6 +6,7 @@
       ./hardware-configuration.nix
     ];
 
+  networking.hostName = "TARS";
 
   environment.systemPackages = with pkgs; [
     # Games
