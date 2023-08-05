@@ -1,15 +1,10 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [
-      ./hardware-configuration.nix
-    ];
-
-  nix.settings.experimental-features = ["nix-command" "flakes"];
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nixpkgs.config.allowUnfree = true;
 
   # Packages
-  nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     hyprpaper
     rofi-wayland
@@ -18,57 +13,52 @@
     libnotify
 
     # Terminal
-    alacritty   # Terminal emulator
-    starship    # Shell prompt
-    helix       # Fancy text editor
-    vim         # Text editor
-    man         # Manual pages
-    neofetch    # System info
-    hyfetch     # System info
-    btop        # System monitor
-    bat         # Fancy cat
+    alacritty # Terminal emulator
+    starship # Shell prompt
+    helix # Fancy text editor
+    vim # Text editor
+    man # Manual pages
+    neofetch # System info
+    hyfetch # System info
+    btop # System monitor
+    bat # Fancy cat
 
     # Basic Apps
-    firefox                 # Web browser
-    chromium                # Web browser
-    tor-browser-bundle-bin  # Web browser
-    zathura                 # PDF viewer
-    bitwarden               # Password manager
-    obsidian                # Fancy markdown editor
-    libreoffice             # Office suite
-    discord                 # Messenger
-    signal-desktop          # Messenger
-    telegram-desktop        # Messenger
-    whatsapp-for-linux      # Messenger
-    insync                  # Google Drive client
-    anki                    # Flashcards
-    gimp                    # Image editor
-    spotify                 # Music player
+    firefox # Web browser
+    chromium # Web browser
+    tor-browser-bundle-bin # Web browser
+    zathura # PDF viewer
+    bitwarden # Password manager
+    obsidian # Fancy markdown editor
+    libreoffice # Office suite
+    discord # Messenger
+    signal-desktop # Messenger
+    telegram-desktop # Messenger
+    whatsapp-for-linux # Messenger
+    insync # Google Drive client
+    anki # Flashcards
+    gimp # Image editor
+    spotify # Music player
 
     # Development
-    git           # Version control
-    git-lfs       # Git Large File Storage
-    gh            # GitHub CLI
-    vscode        # Text editor
-    rustup        # Rust
-    nodejs_20     # Node.js
-    python311     # Python
-    deno          # Deno
-    hyperfine     # Benchmarking
+    git # Version control
+    git-lfs # Git Large File Storage
+    gh # GitHub CLI
+    vscode # Text editor
+    rustup # Rust
+    nodejs_20 # Node.js
+    python311 # Python
+    deno # Deno
+    hyperfine # Benchmarking
     docker-client # Containerization
 
     # Fun CLI Stuff
-    cowsay    # Cowsay
-    fortune   # Fortune
-    lolcat    # Rainbow text
-    cmatrix   # Matrix
-    cbonsai   # Bonsai tree
-    pipes     # Pipes
-    sl        # choo choo!
-
-    # Games
-    steam                   # Game client
-    desmume                 # Nintendo DS emulator
+    fortune # Fortune
+    lolcat # Rainbow text
+    cmatrix # Matrix
+    cbonsai # Bonsai tree
+    pipes # Pipes
+    sl # choo choo!
   ];
 
   # Shell
@@ -94,7 +84,7 @@
     layout = "de";
     xkbVariant = "";
     displayManager.sddm = {
-	    enable = true;
+      enable = true;
     };
   };
 
@@ -111,7 +101,7 @@
     isNormalUser = true;
     description = "Murphy";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    packages = with pkgs; [ ];
   };
 
   # Printing
