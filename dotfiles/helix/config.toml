@@ -7,9 +7,13 @@ select = "block"
 
 [keys.normal]
 C-s = ":w"
-C-o = ":config-open"
-C-r = ":config-reload" 
 j = "move_char_left"
 k = "move_line_down"
 l = "move_line_up"
 "ö" = "move_char_right"
+
+[keys.select]
+j = "extend_char_left"
+k = "extend_line_down"
+l = "extend_line_up"
+"ö" = "extend_char_right"
