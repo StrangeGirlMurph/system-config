@@ -2,6 +2,12 @@
 
 {
   environment.systemPackages = with pkgs; [
+    # Text editors/IDEs
+    helix # Fancy text editor
+    vim # The OG text editor
+    vscode # Visual Studio Code
+
+    # Development
     deno # Deno
     docker-client # Containerization
     gh # GitHub CLI
