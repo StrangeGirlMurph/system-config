@@ -31,7 +31,7 @@
   };
 
   home.file.".config/" = {
-    source = ./dotfiles;
+    source = ../dotfiles;
     recursive = true;
   };
 

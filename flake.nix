@@ -14,12 +14,13 @@
       TARS = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
+          ./modules/nixos.nix
           ./hosts/TARS/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.murphy = import ./hosts/TARS/home.nix;
+            home-manager.users.murphy.imports = [ ./modules/home.nix ./hosts/TARS/home.nix ];
           }
         ];
       };
@@ -27,12 +28,13 @@
       CASE = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
+          ./modules/nixos.nix
           ./hosts/CASE/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.murphy = import ./hosts/CASE/home.nix;
+            home-manager.users.murphy.imports = [ ./modules/home.nix ./hosts/CASE/home.nix ];
           }
         ];
       };
