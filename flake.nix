@@ -20,7 +20,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.murphy.imports = [ ./modules/home.nix ./hosts/TARS/home.nix ];
+            home-manager.users.murphy.imports = [ ./home/home.nix ./hosts/TARS/home.nix ];
           }
         ];
       };
@@ -34,7 +34,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.murphy.imports = [ ./modules/home.nix ./hosts/CASE/home.nix ];
+            home-manager.users.murphy.imports = [ ./home/home.nix ./hosts/CASE/home.nix ];
           }
         ];
       };
