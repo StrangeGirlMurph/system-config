@@ -16,5 +16,13 @@
     nodejs_20 # Node.js
     python311 # Python
     rustup # Rust
+
+    # LSP and so on
+    nodePackages_latest.typescript-language-server
+    nodePackages_latest.svelte-language-server
+    python311Packages.python-lsp-server
+    vscode-langservers-extracted # HTML, CSS, ESLint, JSON, Markdown 
+    nil # Nix LSP
+    marksman # Markdown LSP
   ];
 }
