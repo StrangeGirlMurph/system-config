@@ -19,12 +19,14 @@
     package = pkgs.breeze-qt5;
   };
 
+  # > hyprpaper
   xdg.configFile."hypr/hyprpaper.conf".text = ''
     ipc = off
     preload = ~/.config/hypr/wallpaper.jpg
     wallpaper = ,~/.config/hypr/wallpaper.jpg
   '';
 
+  # > hyprland
   wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.settings = {
     exec-once = [
@@ -137,7 +139,5 @@
       sensitivity = 0;
       touchpad.natural_scroll = true;
     };
-
-
   };
 }

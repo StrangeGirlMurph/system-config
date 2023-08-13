@@ -6,8 +6,8 @@
   home.stateVersion = "23.05";
   home.packages = with pkgs; [ ];
 
-  home.file.".config/hypr/wallpaper.jpg".source = ../dotfiles/hypr/wallpaper.jpg;
-  home.file.".config/neofetch/config.conf".source = ../dotfiles/neofetch/config.conf;
+  home.file.".config/hypr/wallpaper.jpg".source = ./dotfiles/wallpaper.jpg;
+  home.file.".config/neofetch/config.conf".source = ./dotfiles/neofetch.conf;
 
   imports = [
     ./desktop-environment.nix

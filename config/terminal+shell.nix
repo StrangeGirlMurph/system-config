@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+  # > fish
   programs.fish = {
     enable = true;
     shellAliases = {
@@ -16,51 +17,53 @@
     '';
   };
 
+  # > starship
   programs.starship = {
     enable = true;
     enableFishIntegration = true;
-    settings = {
-      format = "$directory$all$character";
+  };
+  programs.starship.settings = {
+    format = "$directory$all$character";
 
-      character = {
-        error_symbol = "[»](bold red)";
-        success_symbol = "[»](bold green)";
-      };
-
-      directory = {
-        truncation_symbol = "../";
-        style = "bold cyan";
-        truncate_to_repo = false;
-        truncation_length = 4;
-        read_only = " ";
-      };
-
-      time = {
-        style = "green";
-        format = "[$time]($style) ";
-        time_format = "%H:%M";
-        disabled = true;
-      };
-
-      c.symbol = " ";
-      docker_context.symbol = " ";
-      git_branch.symbol = " ";
-      golang.symbol = " ";
-      hg_branch.symbol = " ";
-      java.symbol = " ";
-      julia.symbol = " ";
-      lua.symbol = " ";
-      memory_usage.symbol = " ";
-      nix_shell.symbol = " ";
-      nodejs.symbol = " ";
-      package.symbol = " ";
-      python.symbol = " ";
-      rust.symbol = " ";
+    character = {
+      error_symbol = "[»](bold red)";
+      success_symbol = "[»](bold green)";
     };
+
+    directory = {
+      truncation_symbol = "../";
+      style = "bold cyan";
+      truncate_to_repo = false;
+      truncation_length = 4;
+      read_only = " ";
+    };
+
+    time = {
+      style = "green";
+      format = "[$time]($style) ";
+      time_format = "%H:%M";
+      disabled = true;
+    };
+
+    c.symbol = " ";
+    docker_context.symbol = " ";
+    git_branch.symbol = " ";
+    golang.symbol = " ";
+    hg_branch.symbol = " ";
+    java.symbol = " ";
+    julia.symbol = " ";
+    lua.symbol = " ";
+    memory_usage.symbol = " ";
+    nix_shell.symbol = " ";
+    nodejs.symbol = " ";
+    package.symbol = " ";
+    python.symbol = " ";
+    rust.symbol = " ";
   };
 
+  # > alacritty
+  programs.alacritty.enable = true;
   programs.alacritty.settings = {
-    enable = true;
     window = {
       dimensions = {
         columns = 120;
@@ -104,6 +107,7 @@
     shell.program = "fish";
   };
 
+  # > hyfetch
   programs.hyfetch.enable = true;
   programs.hyfetch.settings = {
     preset = "transgender";
