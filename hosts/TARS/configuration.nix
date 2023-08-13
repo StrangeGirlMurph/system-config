@@ -9,6 +9,9 @@
   networking.hostName = "TARS";
 
   environment.systemPackages = with pkgs; [
+    # Windows Drive
+    ntfs3g
+
     # Game development
     unityhub # Unity game engine
     godot_4 # Godot game engine
