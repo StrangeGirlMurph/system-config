@@ -19,6 +19,12 @@
     package = pkgs.breeze-qt5;
   };
 
+  xdg.configFile."hypr/hyprpaper.conf".text = ''
+    ipc = off
+    preload = ~/.config/hypr/wallpaper.jpg
+    wallpaper = ,~/.config/hypr/wallpaper.jpg
+  '';
+
   wayland.windowManager.hyprland.settings = {
     exec-once = [
       "alacritty"
