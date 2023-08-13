@@ -9,6 +9,7 @@
       ll = "ls -l";
       la = "ls -la";
       code = "code .";
+      update = "sudo nixos-rebuild switch && hyprctl reload";
     };
     shellInit = ''
       set -g fish_greeting

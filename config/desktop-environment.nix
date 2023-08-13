@@ -29,6 +29,8 @@
   # > hyprland
   wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.settings = {
+    monitor = ",preferred,auto,1";
+    
     exec-once = [
       "alacritty"
       "hyprpaper"
@@ -96,7 +98,7 @@
       layout = "dwindle";
       gaps_in = 6;
       gaps_out = 6;
-      border_size = 1;
+      border_size = 2;
       "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
       "col.inactive_border" = "rgba(595959aa)";
     };
