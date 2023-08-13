@@ -10,6 +10,8 @@
       la = "ls -la";
       code = "code .";
       update = "sudo nixos-rebuild switch && hyprctl reload";
+      gs = "git status";
+      gc = "git commit -am";
     };
     shellInit = ''
       set -g fish_greeting
@@ -94,7 +96,7 @@
       italic = {
         style = "Bold";
       };
-      size = 12.0;
+      size = 14.0;
     };
 
     cursor = {
