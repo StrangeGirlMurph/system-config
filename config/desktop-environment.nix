@@ -94,10 +94,8 @@
       gaps_in = 6;
       gaps_out = 6;
       border_size = 1;
-      col = {
-        actice_border = "rgba(33ccffee) rgba(00ff99ee) 45deg";
-        inactive_border = "rgba(595959aa)";
-      };
+      "col.actice_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
+      "col.inactive_border" = "rgba(595959aa)";
     };
 
     dwindle = {
@@ -115,7 +113,7 @@
       drop_shadow = true;
       shadow_range = 4;
       shadow_render_power = 3;
-      col.shadow = "rgba(1a1a1aee)";
+      "col.shadow" = "rgba(1a1a1aee)";
     };
 
     animations = {
