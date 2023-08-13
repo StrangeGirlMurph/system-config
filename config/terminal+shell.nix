@@ -2,6 +2,7 @@
 
 {
   programs.fish = {
+    enable = true;
     shellAliases = {
       cls = "clear";
       ll = "ls -l";
@@ -59,6 +60,7 @@
   };
 
   programs.alacritty.settings = {
+    enable = true;
     window = {
       dimensions = {
         columns = 120;
@@ -102,6 +104,7 @@
     shell.program = "fish";
   };
 
+  programs.hyfetch.enable = true;
   programs.hyfetch.settings = {
     preset = "transgender";
     mode = "rgb";

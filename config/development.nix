@@ -8,6 +8,7 @@
   };
 
   programs.helix = {
+    enable = true;
     defaultEditor = true;
     settings = {
       theme = "base16_transparent";

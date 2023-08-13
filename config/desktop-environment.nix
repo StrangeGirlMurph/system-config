@@ -25,6 +25,7 @@
     wallpaper = ,~/.config/hypr/wallpaper.jpg
   '';
 
+  wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.settings = {
     exec-once = [
       "alacritty"
@@ -94,7 +95,7 @@
       gaps_in = 6;
       gaps_out = 6;
       border_size = 1;
-      "col.actice_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
+      "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
       "col.inactive_border" = "rgba(595959aa)";
     };
 
