@@ -16,7 +16,9 @@
     nodejs_20 # Node.js
     python311 # Python
     rustup # Rust
-
+    nodePackages_latest.firebase-tools # Firebase
+    flutter # Flutter
+    
     # LSP and so on
     nodePackages_latest.typescript-language-server
     nodePackages_latest.svelte-language-server

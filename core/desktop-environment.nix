@@ -10,10 +10,7 @@
   ];
 
   # Hyprland (Window Manager)
-  programs.hyprland = {
-    enable = true;
-    xwayland.hidpi = true;
-  };
+  programs.hyprland.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Fonts

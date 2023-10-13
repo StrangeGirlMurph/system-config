@@ -96,8 +96,8 @@
 
     general = {
       layout = "dwindle";
-      gaps_in = 6;
-      gaps_out = 6;
+      gaps_in = 3;
+      gaps_out = 4;
       border_size = 2;
       "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
       "col.inactive_border" = "rgba(595959aa)";
@@ -109,7 +109,7 @@
     };
 
     decoration = {
-      rounding = 10;
+      rounding = 8;
       blur = true;
       blur_size = 3;
       blur_passes = 1;

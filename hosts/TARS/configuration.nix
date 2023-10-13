@@ -19,5 +19,8 @@
     # Games
     steam # Game client
     desmume # Nintendo DS emulator
+
+    # 3D 
+    blender
   ];
 }
