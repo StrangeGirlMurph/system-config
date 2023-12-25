@@ -109,16 +109,16 @@
     };
 
     decoration = {
-      rounding = 8;
-      blur = true;
-      blur_size = 3;
-      blur_passes = 1;
-      blur_new_optimizations = true;
-
+      rounding = 8;        
       drop_shadow = true;
       shadow_range = 4;
       shadow_render_power = 3;
       "col.shadow" = "rgba(1a1a1aee)";
+
+      blur = {
+        size = 3;
+        passes = 1;
+      };
     };
 
     animations = {
