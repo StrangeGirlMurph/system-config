@@ -12,6 +12,7 @@
     hyperfine # Benchmarking
     man # Manual pages
     neofetch # System info
+    scc # Line counter
 
     # Fun
     cbonsai # Bonsai tree
