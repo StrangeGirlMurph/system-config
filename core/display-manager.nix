@@ -1,11 +1,19 @@
 { config, lib, ... }:
 
 {
-  services.greetd = {
-    enable = true;
-    settings.defaultSession = {
-      user = "murphy";
-      command = "${lib.getExe config.programs.hyprland.package}";
+  services.greetd =
+    let
+      session = {
+        command = "${lib.getExe config.programs.hyprland.package}";
+        user = "murphy";
+      };
+    in
+    {
+      enable = true;
+      settings = {
+        terminal.vt = 1;
+        default_session = session;
+        initial_session = session;
+      };
     };
-  };
 }
