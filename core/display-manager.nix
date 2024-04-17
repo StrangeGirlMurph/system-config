@@ -3,12 +3,13 @@
 {
   environment.systemPackages = with pkgs; [
     elegant-sddm
+    where-is-my-sddm-theme
   ];
 
   # SDDM
   services.displayManager.sddm = {
     enable = true;
-    theme = "Elegant";
+    theme = "where_is_my_sddm_theme";
     autoNumlock = true;
   };
 }
