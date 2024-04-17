@@ -9,7 +9,7 @@
   # SDDM
   services.displayManager.sddm = {
     enable = true;
-    theme = "where_is_my_sddm_theme";
+    theme = "where is my sddm theme";
     autoNumlock = true;
   };
 }
