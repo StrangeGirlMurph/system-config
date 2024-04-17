@@ -30,7 +30,7 @@
   wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.settings = {
     monitor = ",preferred,auto,1";
-    
+
     exec-once = [
       "alacritty"
       "hyprpaper"
@@ -109,7 +109,7 @@
     };
 
     decoration = {
-      rounding = 8;        
+      rounding = 8;
       drop_shadow = true;
       shadow_range = 4;
       shadow_render_power = 3;

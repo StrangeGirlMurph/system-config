@@ -11,7 +11,6 @@
 
   # Hyprland (Window Manager)
   programs.hyprland.enable = true;
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Fonts
   fonts = {
@@ -50,7 +49,7 @@
     # X11/xorg
     xserver = {
       enable = true;
-      layout = "de";
+      xkb.layout = "de";
     };
     # Printing
     printing = {

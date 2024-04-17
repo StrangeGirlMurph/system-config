@@ -18,8 +18,9 @@
     rustup # Rust
     nodePackages_latest.firebase-tools # Firebase
     flutter # Flutter
-    
+
     # LSP and so on
+    nixpkgs-fmt # Nixpkgs formatter
     nodePackages_latest.typescript-language-server
     nodePackages_latest.svelte-language-server
     python311Packages.python-lsp-server

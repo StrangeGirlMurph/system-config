@@ -1,10 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  # SDDM (Display Manager)
-  services.xserver.displayManager.sddm.enable = true;
-
-  # systemd-boot (Bootloader)
+  # systemd-boot
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.systemd-boot = {
     enable = true;

@@ -65,63 +65,67 @@
   };
 
   # > alacritty
-  programs.alacritty.enable = true;
-  programs.alacritty.settings = {
-    window = {
-      dimensions = {
-        columns = 120;
-        lines = 30;
+  programs.alacritty = {
+    enable = true;
+    settings = {
+      window = {
+        dimensions = {
+          columns = 120;
+          lines = 30;
+        };
+        padding = {
+          x = 8;
+          y = 8;
+        };
+        decorations = "full";
+        opacity = 0.7;
+        dynamic_title = true;
       };
-      padding = {
-        x = 8;
-        y = 8;
-      };
-      decorations = "full";
-      opacity = 0.7;
-      dynamic_title = true;
-    };
 
-    scrolling = {
-      history = 10000;
-      multiplier = 2;
-    };
+      scrolling = {
+        history = 10000;
+        multiplier = 2;
+      };
 
-    font = {
-      normal = {
-        style = "Regular";
+      font = {
+        normal = {
+          style = "Regular";
+        };
+        bold = {
+          style = "Bold";
+        };
+        italic = {
+          style = "Bold";
+        };
+        size = 14.0;
       };
-      bold = {
-        style = "Bold";
-      };
-      italic = {
-        style = "Bold";
-      };
-      size = 14.0;
-    };
 
-    cursor = {
-      style = {
-        shape = "Beam";
-        blinking = "On";
+      cursor = {
+        style = {
+          shape = "Beam";
+          blinking = "On";
+        };
+        blink_interval = 750;
       };
-      blink_interval = 750;
-    };
 
-    shell.program = "fish";
+      shell.program = "fish";
+    };
   };
 
   # > hyfetch
-  programs.hyfetch.enable = true;
-  programs.hyfetch.settings = {
-    preset = "transgender";
-    mode = "rgb";
-    light_dark = "dark";
-    lightness = 0.7;
-    color_align = {
-      mode = "horizontal";
-      custom_colors = "[]";
+  programs.hyfetch = {
+    enable = true;
+    settings = {
+      preset = "transgender";
+      mode = "rgb";
+      light_dark = "dark";
+      lightness = 0.7;
+      color_align = {
+        mode = "horizontal";
+        custom_colors = "[]";
+      };
+      backend = "neofetch";
     };
-    backend = "neofetch";
   };
 }
 
