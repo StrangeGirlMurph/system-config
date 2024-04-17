@@ -8,7 +8,7 @@
   # SDDM
   services.displayManager.sddm = {
     enable = true;
-    theme = "elegant-sddm";
+    theme = "elegant";
     autoNumlock = true;
   };
 }
