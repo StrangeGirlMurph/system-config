@@ -9,7 +9,8 @@
       ll = "ls -l";
       la = "ls -la";
       code = "code .";
-      update = "sudo nixos-rebuild switch && hyprctl reload";
+      update-system = "fish ~/system-config/update-system.fish";
+      update-packages = "nix flake update; sudo nixos-rebuild switch";
       gs = "git status";
       gc = "git commit -am";
     };
