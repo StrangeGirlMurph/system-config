@@ -1,5 +1,11 @@
-{ config, pkgs, ... }:
+{ config, lib, ... }:
 
 {
-  services.displayManager.sddm.enable = true;
+  services.greetd = {
+    enable = true;
+    settings.defaultSession = {
+      user = "murphy";
+      command = "${lib.getExe config.programs.hyprland.package}";
+    };
+  };
 }
