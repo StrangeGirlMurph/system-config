@@ -5,6 +5,7 @@
     firefox # Web browser
     chromium # Web browser
     tor-browser-bundle-bin # Web browser
+    thunderbird # Email client
     zathura # PDF viewer
     bitwarden # Password manager
     obsidian # Fancy markdown editor
