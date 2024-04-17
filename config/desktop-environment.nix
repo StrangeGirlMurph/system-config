@@ -1,13 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  xdg.mimeApps = {
-    enable = true;
-    defaultApplications = {
-      "application/pdf" = "firefox.desktop";
-    };
-  };
-
   gtk.enable = true;
   #gtk.theme = {};
   #gtk.iconTheme = {};
@@ -22,6 +15,7 @@
   # > hyprpaper
   xdg.configFile."hypr/hyprpaper.conf".text = ''
     ipc = off
+    splash = false
     preload = ~/.config/hypr/wallpaper.jpg
     wallpaper = ,~/.config/hypr/wallpaper.jpg
   '';

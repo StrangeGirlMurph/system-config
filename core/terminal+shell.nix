@@ -6,6 +6,7 @@
     starship # Shell prompt
 
     # CLI tools
+    ranger # File manager
     bat # Fancy cat
     btop # System monitor
     hyfetch # System info
