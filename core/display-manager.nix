@@ -2,5 +2,9 @@
 
 {
   # SDDM
-  services.displayManager.sddm.enable = true;
+  services.displayManager.sddm = {
+    enable = true;
+    theme = "breeze";
+    autoNumlock = true;
+  };
 }
