@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  environment.systemPckages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     firefox # Web browser
     chromium # Web browser
     tor-browser-bundle-bin # Web browser
