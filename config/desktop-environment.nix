@@ -44,10 +44,10 @@
       "$mainMod, F, exec, firefox"
       "$mainMod, S, exec, spotify"
       "$mainMod, D, exec, discord"
-      "$mainMod, A, exec, neovide"
+      "$mainMod, A, exec, code"
       "$mainMod, R, exec, obsidian"
       "$mainMod, C, exec, calendar"
-      "$mainMod, Y, exec, betterbird"
+      "$mainMod, Y, exec, thunderbird"
       "$mainMod, N, exec, notion"
 
       "ALT, SPACE, exec, rofi -show drun -show-icons"
