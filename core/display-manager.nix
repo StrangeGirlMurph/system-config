@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     where-is-my-sddm-theme
+    elegant-sddm
   ];
 
   # SDDM
