@@ -3,16 +3,16 @@
 {
   home.username = "murphy";
   home.homeDirectory = "/home/murphy";
-  home.stateVersion = "23.05";
+  home.stateVersion = "23.11";
   home.packages = with pkgs; [ ];
 
-  home.file.".config/hypr/wallpaper.jpg".source = ./dotfiles/wallpaper.jpg;
+  home.file.".face".source = ./dotfiles/profile.jpg;
   home.file.".config/neofetch/config.conf".source = ./dotfiles/neofetch.conf;
 
   imports = [
-    ./desktop-environment.nix
+    ./desktop.nix
     ./development.nix
-    ./terminal+shell.nix
+    ./terminal.nix
   ];
 
   programs.home-manager.enable = true;

@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+
   environment.systemPackages = with pkgs; [
     # Text editors/IDEs
     helix # Fancy text editor
@@ -14,10 +15,16 @@
     git # Version control
     git-lfs # Git Large File Storage
     nodejs_20 # Node.js
-    python311 # Python
     rustup # Rust
     nodePackages_latest.firebase-tools # Firebase
     flutter # Flutter
+    # Python
+    python3.withPackages
+    (ps: with ps; [
+      numpy
+      pandas
+      matplotlib
+    ])
 
     # LSP and so on
     nixpkgs-fmt # Nixpkgs formatter

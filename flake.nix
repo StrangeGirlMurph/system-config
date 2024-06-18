@@ -7,9 +7,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, ... }: {
+  outputs = inputs@{ nixpkgs, home-manager, nixos-hardware, ... }: {
     nixosConfigurations = {
       TARS = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -30,6 +31,7 @@
         modules = [
           ./core/nixos.nix
           ./hosts/CASE/configuration.nix
+          nixos-hardware.nixosModules.framework-12th-gen-intel
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;

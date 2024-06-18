@@ -18,5 +18,10 @@
     anki # Flashcards
     gimp # Image editor
     spotify # Music player
+    unityhub # Unity game engine
+    godot_4 # Godot game engine
+    steam # Game client
+    desmume # Nintendo DS emulator
+    blender # 3D modeling
   ];
 }

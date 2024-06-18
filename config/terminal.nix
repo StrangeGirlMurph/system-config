@@ -47,21 +47,6 @@
         time_format = "%H:%M";
         disabled = true;
       };
-
-      c.symbol = " ";
-      docker_context.symbol = " ";
-      git_branch.symbol = " ";
-      golang.symbol = " ";
-      hg_branch.symbol = " ";
-      java.symbol = " ";
-      julia.symbol = " ";
-      lua.symbol = " ";
-      memory_usage.symbol = " ";
-      nix_shell.symbol = " ";
-      nodejs.symbol = " ";
-      package.symbol = " ";
-      python.symbol = " ";
-      rust.symbol = " ";
     };
   };
 
