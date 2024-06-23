@@ -7,7 +7,6 @@
 
   # Networking
   networking.networkmanager.enable = true;
-  networking.wireless.enable = true;
   services.openssh.enable = true;
 
   # Time & locale

@@ -19,12 +19,12 @@
     nodePackages_latest.firebase-tools # Firebase
     flutter # Flutter
     # Python
-    python3.withPackages
-    (ps: with ps; [
-      numpy
-      pandas
-      matplotlib
-    ])
+    (python3.withPackages
+      (ps: with ps; [
+        numpy
+        pandas
+        matplotlib
+      ]))
 
     # LSP and so on
     nixpkgs-fmt # Nixpkgs formatter
