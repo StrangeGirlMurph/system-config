@@ -4,6 +4,7 @@ config=$1
 
 nix-shell -p git --run "
     cd ~
+    echo \"Using configuration: $config\"
     echo 'Cloning system-config...'
     git clone https://github.com/StrangeGirlMurph/system-config
     echo 'Moving hardware-configuration.nix...'
