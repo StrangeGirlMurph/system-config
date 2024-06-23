@@ -9,6 +9,7 @@ nix-shell -p git --run "
     git clone https://github.com/StrangeGirlMurph/system-config
     echo 'Moving hardware-configuration.nix...'
     sudo mv -f /etc/nixos/hardware-configuration.nix ~/system-config/hosts/$config/
+    sudo chown $USER:users ~/system-config/hosts/$config/hardware-configuration.nix
     git -C ~/system-config add -A
     echo 'Symlinking system-config...'
     sudo rm -rf /etc/nixos
