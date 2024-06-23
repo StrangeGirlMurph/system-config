@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env nix-shell
+#!nix-shell -p git -i bash
 
 cd ~
-nix-shell -p git 
 git clone https://github.com/StrangeGirlMurph/system-config
 sudo mv /etc/nixos/hardware-configuration.nix ~/system-config/
 sudo ln -s ~/system-config/ /etc/nixos
