@@ -3,7 +3,7 @@
 {
   imports =
     [
-      ./hardware-configuration.nix
+      ../../hardware-configuration.nix
     ];
 
   networking.hostName = "TARS";
