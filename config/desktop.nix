@@ -23,6 +23,7 @@
 
     "org/gnome/desktop/wm/preferences" = {
       workspace-names = [ "Main" ];
+      # button-layout = ":"; # Remove minimize and maximize buttons
     };
 
     /* "org/gnome/desktop/background" = {
@@ -33,7 +34,7 @@
       picture-uri = "file:///run/current-system/sw/share/backgrounds/gnome/vnc-d.png";
       primary-color = "#3465a4";
       secondary-color = "#000000";
-    }; */
+      }; */
 
     # Extensions
     "org/gnome/shell" = {
