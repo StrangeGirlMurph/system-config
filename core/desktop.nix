@@ -7,7 +7,7 @@
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
     xkb.layout = "de";
-    xkb.variant = "caps:escape";
+    # xkb.variant = "caps:escape";
     libinput.enable = true;
   };
 
@@ -50,11 +50,11 @@
   # Gnome
   environment.gnome.excludePackages = (with pkgs; [
     gnome-tour
+    gedit
   ]) ++ (with pkgs.gnome; [
-    gnome-terminal # terminal
-    gedit # text editor
-    epiphany # web browser
-    geary # email reader
+    gnome-terminal
+    epiphany
+    geary
   ]);
 
   environment.systemPackages = with pkgs.gnomeExtensions; [
